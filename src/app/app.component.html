@@ -18,3 +18,15 @@
   </li>
 </ul>
 
+<button (click) = "togglecolors()" class=btn>
+  {{showcolors ? 'Ocultar colores' : 'Mostrar colores'}}
+</button>
+
+<div *ngIf="showcolors">
+    <h3>Colores:</h3>
+    <ul>
+      <li *ngFor="let color of colores">
+        {{color}}
+      </li>
+    </ul>
+</div>
