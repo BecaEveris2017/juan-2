@@ -19,4 +19,9 @@ export class AppComponent {
   togglecolors(){
     this.showcolors = !this.showcolors;
   }
+  newcolor(color){
+    this.colores.push(color.value);
+    color.value ='';
+    return false;
+  }
 }

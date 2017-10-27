@@ -29,4 +29,11 @@
         {{color}}
       </li>
     </ul>
+    <form (submit)="newcolor(color)">
+      <input
+      #color
+      type="text"
+      name="color"
+      placeholder="Color">
+    </form>
 </div>
